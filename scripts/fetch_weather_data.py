@@ -2,6 +2,11 @@ import requests
 import mysql.connector
 import json
 from datetime import datetime
+import warnings
+from urllib3.exceptions import NotOpenSSLWarning
+
+# Suppress warning about LibreSSL vs OpenSSL on macOS system Python
+warnings.filterwarnings("ignore", category=NotOpenSSLWarning)
 
 # Load DB credentials from external JSON file
 with open('/Users/chuck/BirdMonitor/config/db_secrets.json') as f:
