@@ -31,5 +31,5 @@ fi
 echo "[`date`] ✅ Wrapper script finished." >> $LOGDIR/analyze_s2.log
 
 echo "[`date`] 🔎 Running monitor_file_flow_s2.py..." >> $LOGDIR/analyze_s2.log
-#python3 monitor_file_flow_s2.py >> $LOGDIR/monitor_s2.log 2>&1
+python3 monitor_file_flow_s2.py >> $LOGDIR/monitor_s2.log 2>&1
 

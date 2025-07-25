@@ -44,5 +44,5 @@ echo "[`date`] ✅ Wrapper script finished." >> /Users/chuck/BirdMonitor/logs/an
 
 # Final step: monitor file flow (after sync + import)
 echo "[`date`] 🔎 Running monitor_file_flow.py..." >> /Users/chuck/BirdMonitor/logs/analyze.log
-#python3 /Users/chuck/BirdMonitor/scripts/monitor_file_flow.py >> /Users/chuck/BirdMonitor/logs/monitor.log 2>&1
+python3 /Users/chuck/BirdMonitor/scripts/monitor_file_flow.py >> /Users/chuck/BirdMonitor/logs/monitor.log 2>&1
 
