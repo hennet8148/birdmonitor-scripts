@@ -1,0 +1,4 @@
+# Ignore secrets or config files that shouldn’t be committed
+*.json
+*.yaml
+*.yml
