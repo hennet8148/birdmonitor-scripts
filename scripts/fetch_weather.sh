@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Log start
 echo "[`date`] 🌤️ Starting fetch_weather.sh" >> /Users/chuck/BirdMonitor/logs/weather.log
 # Suppress NotOpenSSLWarning globally
