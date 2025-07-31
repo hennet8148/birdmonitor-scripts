@@ -8,7 +8,7 @@ echo "🕒 [`date`] Starting full backup + cleanup run" >> "$LOGFILE"
 # Only run deletion step if backup succeeded
 if [ $? -eq 0 ]; then
   echo "📦 Backup successful, proceeding to compare + delete" >> "$LOGFILE"
-  /usr/local/bin/python3 /Users/chuck/BirdMonitor/scripts/gentle_compare_backup_hashes.py >> "$LOGFILE" 2>&1
+  /Users/chuck/.pyenv/shims/python3 /Users/chuck/BirdMonitor/scripts/gentle_compare_backup_hashes.py >> "$LOGFILE" 2>&1
   /Users/chuck/BirdMonitor/scripts/delete_safe_files.sh >> "$LOGFILE" 2>&1
 else
   echo "❌ Backup failed — skipping deletion" >> "$LOGFILE"

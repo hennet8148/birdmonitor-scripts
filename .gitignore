@@ -1,0 +1,62 @@
+# macOS system junk
+.DS_Store
+
+# Editor temp files
+*~
+*.bak
+*.swp
+
+# Python junk
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtualenvs and poetry/venv
+.venv/
+env/
+venv/
+
+# Binary backups and config junk
+*.tar.gz
+*.txt
+config_stuff_birdmonitor
+config1_10000_ft
+'
+
+# AppMap (IDE auto-gen)
+appmap/
+*.appmap.json
+
+# BirdNET Analyzer clone (not part of repo)
+BirdNET-Analyzer*/
+BirdNET-Analyzer-*/
+
+# Local test and result dirs
+results_v2_current/
+test_processed_wav_current/
+test_input/
+results_v2_4/
+current_trimmed.csv
+v2_4_trimmed.csv
+
+# Dashboard dev (optional, if you want it out)
+dashboard/
+
+# Live log output
+logs/
+
+# Ignore all untracked data subdirs except those committed
+data/unprocessed/
+data/processed_csv/
+data/processed_csv_s2/
+data/processed_wav/
+data/unprocessed_csv/
+data/unprocessed_csv_s2/
+data/unprocessed_backup_*/
+
+# Catch-all ignore pattern, allow only core dirs
+!scripts/
+!data/
+!config/
+
