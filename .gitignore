@@ -3,7 +3,6 @@
 
 # Editor temp files
 *~
-*.bak
 *.swp
 
 # Python junk
@@ -19,10 +18,8 @@ venv/
 
 # Binary backups and config junk
 *.tar.gz
-*.txt
 config_stuff_birdmonitor
 config1_10000_ft
-'
 
 # AppMap (IDE auto-gen)
 appmap/
@@ -55,8 +52,10 @@ data/unprocessed_csv/
 data/unprocessed_csv_s2/
 data/unprocessed_backup_*/
 
-# Catch-all ignore pattern, allow only core dirs
+# Allow core directories
 !scripts/
+!scripts/*.sh
+!scripts/*.py
 !data/
 !config/
 
