@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/local/bin/python3
 
 import subprocess
 import os
@@ -17,6 +17,8 @@ LON = "-75.0"
 WEEK = "25"  # TODO: Replace with dynamic or config-based value later
 MIN_CONF = "0.1"
 SENSITIVITY = "1.0"
+
+PYTHON_BIN = "/usr/local/bin/python3"
 
 def log(msg):
     print(f"[{datetime.now().isoformat()}] {msg}", flush=True)
@@ -43,7 +45,7 @@ def main():
     log("📊 Starting Station 2 batch BirdNET analysis...")
 
     cmd = [
-        "python3", "-m", "birdnet_analyzer.analyze", INPUT_DIR,
+        PYTHON_BIN, "-m", "birdnet_analyzer.analyze", INPUT_DIR,
         "-o", OUTPUT_DIR,
         "--lat", LAT,
         "--lon", LON,
