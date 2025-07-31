@@ -14,7 +14,7 @@ PROCESSED_WAV_DIR = "/Users/chuck/BirdMonitor/data/processed_wav"
 # Settings
 LAT = "41.0"
 LON = "-75.0"
-WEEK = "25"  # Update weekly if desired
+WEEK = "25"  # TODO: Externalize or auto-calculate this later
 MIN_CONF = "0.1"
 SENSITIVITY = "1.0"
 
@@ -43,7 +43,7 @@ def main():
     log("📊 Starting batch BirdNET analysis...")
 
     cmd = [
-         "/Users/chuck/.local/bin/poetry", "run", "python", "-m", "birdnet_analyzer.analyze", INPUT_DIR,
+        "python3", "-m", "birdnet_analyzer.analyze", INPUT_DIR,
         "-o", OUTPUT_DIR,
         "--lat", LAT,
         "--lon", LON,
